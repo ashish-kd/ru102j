@@ -1,6 +1,7 @@
 package com.redislabs.university.RU102J;
 
 import com.redislabs.redistimeseries.RedisTimeSeries;
+import com.redislabs.university.RU102J.api.Site;
 import com.redislabs.university.RU102J.command.LoadCommand;
 import com.redislabs.university.RU102J.command.RunCommand;
 import com.redislabs.university.RU102J.dao.*;
@@ -12,6 +13,9 @@ import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class RediSolarApplication extends Application<RediSolarConfiguration> {
 
